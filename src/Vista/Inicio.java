@@ -236,12 +236,15 @@ public class Inicio extends javax.swing.JFrame {
         }
        
         
-        Clientes c = new Clientes();
+        Clientes c = new Clientes(nombre, PriApellido, SegApellido, edad, EstadoCivil, sexo);
         
         
         vDatos.add(c);
         
-      
+        //Almacenar datos en jTextArea
+        
+        jTextAreaAlmacenarDatos.setText(jTextAreaAlmacenarDatos.getText() + "\n" + c.toString());
+                      
     }//GEN-LAST:event_jButtonGuardarMouseClicked
 
     /**
